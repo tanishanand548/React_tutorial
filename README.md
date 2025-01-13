@@ -8,9 +8,9 @@
 ### Installing react with vite
 
 Step 1: npm create vite@latest
-Step 2: Chnage project-name or use default
-Step 3: Choose framework: `React`
-Step 4: Choose variant: `Typescript`
-Step 5: Run command: `cd <project-name>`
-Step 6: Run command: `npm install`
-Step 7: Run web-server: `npm run dev`
+<br> Step 2: Chnage project-name or use default
+<br> Step 3: Choose framework: `React`
+<br> Step 4: Choose variant: `Typescript`
+<br> Step 5: Run command: `cd <project-name>`
+<br> Step 6: Run command: `npm install`
+<br> Step 7: Run web-server: `npm run dev`
