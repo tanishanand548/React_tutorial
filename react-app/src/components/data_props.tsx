@@ -1,16 +1,18 @@
-// React Hooks
-// UseState
-
-import { useState } from "react";
+// Passind data via props
 import { Fragment } from "react/jsx-runtime";
+import { useState } from "react";
+interface Props {
+  cities: string[];
+  heading: string;
+  onSelectItem: (item: string) => void;
+}
 
-function Reacthookies() {
-  let cities = ["Mumbai", "Delhi", "Bangalore", "Pune", "Hyderabad", "Noida"];
+function Propsinrtx({ cities, heading, onSelectItem }: Props) {
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
   return (
     <Fragment>
-      <h1>Hello World</h1>
+      <h1>{heading}</h1>
       <ul className="list-group">
         {cities.length === 0 ? <p>No element found</p> : null}
         {cities.map((cities, index) => (
@@ -23,6 +25,7 @@ function Reacthookies() {
             key={cities}
             onClick={() => {
               setSelectedIndex(index);
+              onSelectItem(cities);
             }}
           >
             {cities}
@@ -33,4 +36,4 @@ function Reacthookies() {
   );
 }
 
-export default Reacthookies;
+export default Propsinrtx;
