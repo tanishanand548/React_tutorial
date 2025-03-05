@@ -5,6 +5,9 @@
 1. Create React APP(CRA)
 2. Vite
 
+### Installing react app
+    npx create-react-app <your_file_name>
+
 ### Installing react with vite
 
 Step 1: npm create vite@latest
